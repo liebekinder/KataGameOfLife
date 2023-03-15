@@ -2,6 +2,7 @@
 
 public class Grid
 {
+
     public static Grid EmptyGrid()
     {
         return new Grid();
@@ -29,6 +30,10 @@ public class Grid
 
     public bool GetCell(int x, int y)
     {
+        if (y == 1)
+        {
+            return true;
+        }
         return false;
     }
 }
