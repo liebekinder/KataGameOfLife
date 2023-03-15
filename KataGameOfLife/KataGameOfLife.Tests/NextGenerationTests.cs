@@ -1,3 +1,5 @@
+using FluentAssertions;
+
 namespace KataGameOfLife.Tests;
 
 public class NextGenerationTests
@@ -7,12 +9,12 @@ public class NextGenerationTests
     {
         // Arrange
         var initialGrid = Grid.Empty();
-        var expectedGrid = Grid.Empty();
 
         // Act
         var actualGrid = initialGrid.NextGeneration();
 
         // Assert
+        var expectedGrid = Grid.Empty();
         actualGrid.Should().BeEquivalentTo(expectedGrid);
     }
 }
