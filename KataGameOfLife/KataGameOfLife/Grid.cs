@@ -8,7 +8,7 @@ namespace KataGameOfLife;
 
 public class Grid
 {
-    public static Grid Empty()
+    public static Grid EmptyGrid()
     {
         return new Grid();
     }
