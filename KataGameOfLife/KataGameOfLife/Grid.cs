@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace KataGameOfLife;
+﻿namespace KataGameOfLife;
 
 public class Grid
 {
     public static Grid EmptyGrid()
+    {
+        return new Grid();
+    }
+
+    public static Grid NewGrid(int height, int width)
     {
         return new Grid();
     }
@@ -21,5 +20,15 @@ public class Grid
     public override bool Equals(object? obj)
     {
         return true;
+    }
+
+    public void CreateCell(bool alive, int x, int y)
+    {
+        return;
+    }
+
+    public bool GetCell(int x, int y)
+    {
+        return false;
     }
 }
